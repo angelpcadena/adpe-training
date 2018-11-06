@@ -1,29 +1,46 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div class="o-layout">
+    <header class="o-layout__header">
+      <div class="o-container">
+        <nav class="c-main-nav">
+          <a href="/">
+            <img />
+          </a>
+          <ul class="c-main-nav__items">
+            <li class="c-main-nav__item">
+              <a href="#soluciones" class="c-main-nav__anchor">
+                Soluciones
+              </a>
+            </li>
+            <li class="c-main-nav__item">
+              <a href="#propuesta" class="c-main-nav__anchor">
+                Propuesta
+              </a>
+            </li>
+            <li class="c-main-nav__item">
+              <a href="#nuestro-trabajo" class="c-main-nav__anchor">
+                Trabajo
+              </a>
+            </li>
+            <li class="c-main-nav__item">
+              <a href="#testimonios" class="c-main-nav__anchor">
+                Testimonios
+              </a>
+            </li>
+            <li class="c-main-nav__item">
+              <a href="#contactanos" class="c-main-nav__anchor">
+                Contáctanos
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="o-layout__content">
+      <router-view></router-view>
+    </main>
+    <footer class="o-layout__footer c-main-footer">
+      hola
+    </footer>
   </div>
 </template>
-
-<style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
