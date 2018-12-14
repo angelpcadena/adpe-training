@@ -28,14 +28,106 @@
 		<div class="o-container">
 			<hr class="c-landing__splash-separator" />
 		</div>
-		<section id="soluciones">
-			<h2>Soluciones</h2>
+		<section class="c-landing__solutions" id="soluciones">
+			<div class="o-container">
+				<div class="c-landing__grid">
+					<div class="c-landing__grid-item">
+						<h2 class="c-landing__section-title">Soluciones</h2>
+					</div>
+					<div class="c-landing__grid-item">
+						<label class="c-landing__grid-item-title">e-Learning</label>
+						<p class="c-landing__grid-item-description">Descripción de solución 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar odio id mauris sollicitudin, eget ornare risus scelerisque.</p>
+					</div>
+					<div class="c-landing__grid-item">
+						<label class="c-landing__grid-item-title">Videos</label>
+						<p class="c-landing__grid-item-description">Descripción de solución 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar odio id mauris sollicitudin, eget ornare risus scelerisque.</p>
+					</div>
+					<div class="c-landing__grid-item">
+						<label class="c-landing__grid-item-title">Mapeo de Procesos</label>
+						<p class="c-landing__grid-item-description">Descripción de solución 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar odio id mauris sollicitudin, eget ornare risus scelerisque.</p>
+					</div>
+					<div class="c-landing__grid-item">
+						<label class="c-landing__grid-item-title">Manuales Operativos</label>
+						<p class="c-landing__grid-item-description">Descripción de solución 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar odio id mauris sollicitudin, eget ornare risus scelerisque.</p>
+					</div>
+					<div class="c-landing__grid-item">
+						<label class="c-landing__grid-item-title">Cursos presenciales</label>
+						<p class="c-landing__grid-item-description">Descripción de solución 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar odio id mauris sollicitudin, eget ornare risus scelerisque.</p>
+					</div>
+				</div>
+				<div class="c-landing__solutions-cta">
+					<span class="c-landing__solutions-cta-description">
+						Call to Action pls click me
+					</span>
+					<button type="button" class="c-button">
+						Contáctanos
+					</button>
+				</div>
+			</div>
 		</section>
-		<section id="propuesta">
-			<h2>AdPe en tu organización</h2>
+		<section class="c-landing__organization" id="propuesta">
+			<div class="c-landing__organization-bg">
+				<div class="c-landing__organization-bg-left">
+				</div>
+				<div class="c-landing__organization-bg-right">
+				</div>
+			</div>
+			<div class="o-container">
+				<h2 class="c-landing__section-title">AdPe en tu organización</h2>
+				<div class="c-landing__organization-content">
+					<div class="c-landing__organization-content-inner">
+						<div class="c-landing__organization-content-description">
+							Tu equipo
+							<ul>
+								<li> Una lista de lo que </li>
+								<li> Tu equipo podrá lograr </li>
+								<li> Con AdPe Solutions </li>
+							</ul>
+						</div>
+					</div>
+					<div class="c-landing__organization-content-inner">
+						<div class="c-landing__organization-content-description">
+							Tus clientes
+							<ul>
+								<li> Una lista de lo que </li>
+								<li> Tus clienes podrán lograr </li>
+								<li> Con AdPe Solutions </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="c-landing__organization-content">
+					<div class="c-landing__organization-content-inner">
+						<button class="c-button c-button--orange c-landing__organization-button">Botón</button>
+					</div>
+					<div class="c-landing__organization-content-inner">
+						<button class="c-button c-button--orange c-landing__organization-button">Botón</button>
+					</div>
+				</div>
+			</div>
 		</section>
-		<section id="nuestro-trabajo">
-			<h2>Nuestro trabajo</h2>
+		<section class="c-landing__work" id="nuestro-trabajo">
+			<div class="o-container">
+				<h2 class="c-landing__section-title">Nuestro trabajo</h2>
+				<div class="c-landing__work-showcase">
+					<div class="c-landing__work-showcase-item">
+						<img class="c-landing__showcase-item-image" />
+						<label class="c-landing__showcase-item-label">Trabajo 1</label>
+					</div>
+					<div class="c-landing__work-showcase-item">
+						<img class="c-landing__showcase-item-image" />
+						<label class="c-landing__showcase-item-label">Trabajo 2</label>
+					</div>
+					<div class="c-landing__work-showcase-item">
+						<img class="c-landing__showcase-item-image" />
+						<label class="c-landing__showcase-item-label">Trabajo 3</label>
+					</div>
+					<div class="c-landing__work-showcase-item">
+						<img class="c-landing__showcase-item-image" />
+						<label class="c-landing__showcase-item-label">Trabajo 4</label>
+					</div>
+				</div>
+			</div>
 		</section>
 		<section id="testimonios">
 			<h2>Testimonios</h2>
