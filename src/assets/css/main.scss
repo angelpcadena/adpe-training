@@ -295,6 +295,31 @@ body {
 		margin-bottom: 0;
 		margin-top: 2em;
 	}
+
+	.c-landing__quotes {
+		padding: 6em 0;
+	}
+
+	.c-landing__quote {
+		display: flex;
+	}
+
+	.c-landing__quote-item {
+		box-shadow: 0 0 .15em rgba(0, 0, 0, 0.25);
+		flex: 1;
+		margin: .25em 0;
+		padding: 2em;
+		margin-right: 8em;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	
+	.c-landing__contact {
+		background-color: $blue-light;
+		padding: 6em 0;
+	}
 }
 
 // Small devices (landscape phones, 576px and up)

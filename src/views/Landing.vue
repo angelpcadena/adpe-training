@@ -119,27 +119,75 @@
 						<label class="c-landing__showcase-item-label">Trabajo 2</label>
 					</div>
 					<div class="c-landing__work-showcase-item">
-						<img class="c-landing__showcase-item-image" />
+						<img class="c-landing__showcase-item-image" />	
 						<label class="c-landing__showcase-item-label">Trabajo 3</label>
 					</div>
 					<div class="c-landing__work-showcase-item">
 						<img class="c-landing__showcase-item-image" />
-						<label class="c-landing__showcase-item-label">Trabajo 4</label>
+						<label cla	ss="c-landing__showcase-item-label">Trabajo 4</label>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="testimonios">
-			<h2>Testimonios</h2>
+		<section id="testimonios" class="c-landing__quotes">
+			<div class="o-container">
+				<h2 class="c-landing__section-title">Testimonios</h2>
+			</div>
+			<slick :options="{ slidesToShow: 1 }">
+				<div>
+					<div class="o-container c-landing__quote">
+						<blockquote class="c-landing__quote-item">
+							<p>Este es el mejor servicio del mundo!</p>
+							<footer>
+								- Yo mero, CEO de mi casa
+							</footer>
+						</blockquote>
+						<blockquote class="c-landing__quote-item">
+							<p>Este es el mejor servicio del mundo!</p>
+							<footer>
+								- Yo mero, CEO de mi casa
+							</footer>
+						</blockquote>
+					</div>
+				</div>
+				<div>
+					<div class="o-container c-landing__quote">
+						<blockquote class="c-landing__quote-item">
+							<p>Este es el mejor servicio del mundo!</p>
+							<footer>
+								- Yo mero, CEO de mi casa
+							</footer>
+						</blockquote>
+						<blockquote class="c-landing__quote-item">
+							<p>Este es el mejor servicio del mundo!</p>
+							<footer>
+								- Yo mero, CEO de mi casa
+							</footer>
+						</blockquote>
+					</div>
+				</div>
+			</slick>
 		</section>
-		<section id="contactanos">
-			<h2>Contactános</h2>
+		<section id="contactanos" class="c-landing__contact">
+			<div class="o-container">
+				<h2 class="c-landing__section-title">Contáctanos</h2>
+				<form>
+				</form>
+			</div>
 		</section>
 	</div>
 </template>
 
 <script>
+	import Slick from "vue-slick"
+
 	export default {
-		name: "landing"
+		name: "landing",
+		components: { Slick }
 	}
-</script>   
+</script>
+
+<style lang="css">
+		@import "../../node_modules/slick-carousel/slick/slick.css";
+		@import "../../node_modules/slick-carousel/slick/slick-theme.css";
+</style>
