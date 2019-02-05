@@ -129,11 +129,11 @@
 				</div>
 			</div>
 		</section>
-		<section id="testimonios" class="c-landing__quotes">
+		<!-- <section id="testimonios" class="c-landing__quotes">
 			<div class="o-container">
 				<h2 class="c-landing__section-title">Testimonios</h2>
 			</div>
-			<slick :options="{ slidesToShow: 1 }">
+			<slick :options="slickOptions">
 				<div>
 					<div class="o-container c-landing__quote">
 						<blockquote class="c-landing__quote-item">
@@ -167,12 +167,11 @@
 					</div>
 				</div>
 			</slick>
-		</section>
+		</section> -->
 		<section id="contactanos" class="c-landing__contact">
 			<div class="o-container">
 				<h2 class="c-landing__section-title">Contáctanos</h2>
-				<form>
-				</form>
+				<contact-form></contact-form>
 			</div>
 		</section>
 	</div>
@@ -180,10 +179,23 @@
 
 <script>
 	import Slick from "vue-slick"
+	import ContactForm from "../components/contact-form"
+
+	let slickOptions = {
+		arrows: false
+	}
 
 	export default {
 		name: "landing",
-		components: { Slick }
+		components: { Slick, ContactForm },
+		data() {
+			return {
+				slickOptions: slickOptions
+			}
+		},
+		mounted() {
+			
+		}
 	}
 </script>
 
