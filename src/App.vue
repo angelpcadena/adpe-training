@@ -1,7 +1,8 @@
 <template>
 	<v-app>
+		<navbar></navbar>
 		<div class="o-layout">
-			<header class="o-layout__header">
+			<!-- <header class="o-layout__header">
 				<div class="o-container">
 					<nav class="c-main-nav">
 						<router-link to="/" class="c-main-nav__logo">
@@ -36,19 +37,19 @@
 						</ul>
 					</nav>
 				</div>
-			</header>
+			</header> -->
 			<main class="o-layout__content">
 				<router-view></router-view>
 			</main>
 			<footer class="o-layout__footer c-main-footer">
-				<div class="c-main-footer__top">
+				<div class="c-main-footer__top grey darken-4">
 					<div class="o-container">
 						<router-link to="/" class="c-main-footer__logo">
 							<img src="~@/assets/images/logo-temp.png" alt="AdPe Training" class="c-main-footer__logo-inner" />
 						</router-link>
 					</div>
 				</div>
-				<div class="c-main-footer__bottom">
+				<div class="c-main-footer__bottom black">
 					<div class="o-container">
 						AdPe Training © 2018
 					</div>
@@ -58,13 +59,12 @@
 	</v-app>
 </template>
 
-<style lang="scss">
-	html {
-		background-color: white;
-	}
+<script>
+	import Navbar from './components/navbar'
 
-	body {
-		font-size: 14px;
-		font-family: 'Quicksand'
+	export default {
+		components: {
+			Navbar
+		}
 	}
-</style>
+</script>

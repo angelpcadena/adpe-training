@@ -1,5 +1,5 @@
 <template>
-    <v-form v-model="valid" lazy-validation @submit.prevent="sendMessage">
+    <v-form ref="form" v-model="valid" lazy-validation @submit.prevent="sendMessage">
         <v-text-field label="Nombre completo" v-model="fromName" :rules="requiredRules" required>
         </v-text-field>
         <v-text-field label="Teléfono" v-model="fromPhone" type="tel" mask="phone" :rules="requiredRules" required>
@@ -8,7 +8,7 @@
         </v-text-field>
         <v-textarea label="Tu mensaje" v-model="message" :rules="requiredRules" required>
         </v-textarea>
-        <v-btn primary type="submit" :disabled="valid">
+        <v-btn large round depressed color="primary darken-1" type="submit" :disabled="!valid">
             Enviar
         </v-btn>
     </v-form>
@@ -40,6 +40,8 @@
         },
         methods: {
             sendMessage() {
+                if (!this.$refs.form.validate()) return
+
                 let templateParams = {
                     "from_name": this.fromName,
                     "from_email": this.fromEmail,

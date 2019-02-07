@@ -13,24 +13,9 @@ html, body {
 	height: 100%;
 }
 
-
-
 .o-layout {
-	display: flex;
-	height: 100%;
-	flex-direction: column;
-
-	.o-layout__header {
-		background-color: $blue;
-		position: fixed;
-		top: 0;
-		width: 100%;
-		z-index: 1;
-	}
-
 	.o-layout__content {
 		flex: 1;
-		margin-top: 70px;
 	}
 
 	.o-layout__footer {
@@ -94,12 +79,11 @@ html, body {
 
 .c-main-footer {
 	.c-main-footer__top {
-		background-color: $gray;
 		padding: 2em 0;
 	}
 	
 	.c-main-footer__bottom {
-		background-color: $gray-dark;
+		color: white;
 		padding: 1em 0;
 	}
 
@@ -187,7 +171,7 @@ html, body {
 
 	.c-landing__solutions-cta-description {
 		font-size: 1.26em;
-		margin-right: 3.25em;
+		margin-right: 1em;
 	}
 
 
@@ -234,13 +218,11 @@ html, body {
 	}
 
 	.c-landing__organization-bg-left {
-		background-color: #0d47a1;
 		flex: 1;
 		width: 50%;
 	}
 
 	.c-landing__organization-bg-right {
-		background-color: #455a64;	
 		flex: 1;
 		width: 50%;
 		margin-left: -.1em;
@@ -266,7 +248,6 @@ html, body {
 	}
 
 	.c-landing__work {
-		background-color: #E1E2E1;
 		padding: 6em 0;
 	}
 
@@ -277,7 +258,6 @@ html, body {
 
 	.c-landing__work-showcase-item {
 		background-color: white;
-		box-shadow: 0 0 .5em rgba(0, 0, 0, 0.25);
 		padding: 2em;
 		border-radius: 2px;
 		text-align: center;
