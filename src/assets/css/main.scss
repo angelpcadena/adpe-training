@@ -99,9 +99,9 @@ html, body {
 .c-landing {
 	.c-landing__section-title {
 		font-family: 'Montserrat';
-		font-size: 2.46em;
+		font-size: 2.46rem;
 		font-weight: bold;
-		margin: 0;
+		margin: 0;	
 		margin-bottom: 2em;
 	}
 
@@ -309,15 +309,7 @@ html, body {
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { }
-	.o-container {
-		max-width: 900px;
-		margin-left: auto;
-		margin-right: auto;
-	}
+
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1300px) {
-	.o-container {
-		max-width: 1280px;
-	}
-}
+@media (min-width: 1300px) { }
