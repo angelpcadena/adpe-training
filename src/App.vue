@@ -1,6 +1,38 @@
 <template>
 	<v-app>
-		<navbar></navbar>
+		<v-navigation-drawer v-model="drawer" app absolute temporary>
+			<v-list class="pt-0" dense>
+        <v-list-tile>
+          <!-- <v-list-tile-action>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-tile-action> -->
+          <v-list-tile-content>
+            <v-list-tile-title>Soluciones</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+				<v-list-tile>
+          <v-list-tile-content>
+            <v-list-tile-title>Propuesta</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+				<v-list-tile>
+          <v-list-tile-content>
+            <v-list-tile-title>Trabajo</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+				<!-- <v-list-tile>
+          <v-list-tile-content>
+            <v-list-tile-title>Testimonios</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile> -->
+				<v-list-tile>
+          <v-list-tile-content>
+            <v-list-tile-title>Contactanos</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+		</v-navigation-drawer>
+		<navbar v-bind:toggle.sync="drawer"></navbar>
 		<v-content>
 			<v-container fluid pa-0>
 					<router-view></router-view>
@@ -29,6 +61,11 @@
 	export default {
 		components: {
 			Navbar
+		},
+		data() {
+			return {
+				drawer: null
+			}
 		}
 	}
 </script>

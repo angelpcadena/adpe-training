@@ -4,10 +4,11 @@
       <v-container py-0 my-0>
         <v-flex xs12 class="inner-wrapper">
           <v-layout row wrap class="nav-items">
+            <v-toolbar-side-icon class="hidden-md-and-up" @click.stop="$emit('update:toggle', !toggle)"></v-toolbar-side-icon>
             <v-avatar class="nav-logo" @click="$root.goTo(0)">
               <img src="~@/assets/images/logo-temp.png" />
             </v-avatar>
-            <v-toolbar-items>
+            <v-toolbar-items class="hidden-sm-and-down">
               <v-btn flat @click="$root.goTo('#soluciones')">Soluciones</v-btn>
               <v-btn flat @click="$root.goTo('#propuesta')">Propuesta</v-btn>
               <v-btn flat @click="$root.goTo('#nuestro-trabajo')">Trabajo</v-btn>
@@ -22,8 +23,14 @@
 </template>
 
 <style lang="scss">  
-  .outer-wrapper, .inner-wrapper, .nav-items {
+  .outer-wrapper,
+  .inner-wrapper,
+  .nav-items {
     height: 100%;
+  }
+
+  .v-toolbar__content {
+    padding: 0!important;
   }
 
   .nav-items {
@@ -35,6 +42,7 @@
 
 <script>
   export default {
+    props: ["toggle"],
     data() {
       return {
         

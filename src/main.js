@@ -8,7 +8,7 @@ import "./assets/css/bootstrap-reboot.min.css"
 import "./assets/css/quicksand.css"
 import "./assets/css/montserrat.css"
 
-//import "vuetify/dist/vuetify.min.css"
+import "@mdi/font/css/materialdesignicons.css"
 
 require("./assets/stylus/main.styl")
 
@@ -17,7 +17,9 @@ import "./assets/css/main.scss"
 
 Vue.config.productionTip = false
 
-Vue.use(Vuetify)
+Vue.use(Vuetify, {
+  iconfont: "mdi"
+})
 
 new Vue({
   router,
