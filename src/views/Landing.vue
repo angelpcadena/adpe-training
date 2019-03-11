@@ -3,14 +3,15 @@
 		<v-flex tag="section" class="c-landing__splash" xs12>
 			<div class="c-landing__splash-image">
 				<v-container class="c-landing__splash-text">
-					<p class="c-landing__splash-text-inner">
+					<div class="c-landing__splash-text-inner">
+						<img src="~@/assets/images/logo-temp@2x.png" alt="AdPe Training" class="c-landing__splash-logo-inner hidden-md-and-up"/>
 						Ayudamos a las empresas<br />a alcanzar sus objetivos
-					</p>
-				</v-container>
+					</div>
+				</v-container>	
 			</div>
 			<div class="c-landing__splash-intro">
 				<v-container class="c-landing__splash-description">
-					<div>
+					<div class="hidden-sm-and-down">
 						<h1 class="c-landing__splash-logo">
 							<img src="~@/assets/images/logo-temp@2x.png" alt="AdPe Training" class="c-landing__splash-logo-inner"/>
 						</h1>  
