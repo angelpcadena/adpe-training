@@ -23,30 +23,6 @@ html, body {
 	}
 }
 
-.c-button {
-	background-color: $blue-dark;
-	border: 0;
-	color: white;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 1.1em;
-	padding: .75em 2.25em;
-	vertical-align: middle;
-	border-radius: 50em;
-
-	&:hover {
-		background-color: $blue;
-	}
-
-	&.c-button--orange {
-		background-color: #c07015;
-
-		&:hover {
-			background-color: #a15c0e;
-		}
-	}
-}
-
 .c-main-nav {    
 	color: white;
 	padding: .5em 0;
@@ -99,10 +75,10 @@ html, body {
 .c-landing {
 	.c-landing__section-title {
 		font-family: 'Montserrat';
-		font-size: 2.46rem;
+		font-size: 1.25rem;
 		font-weight: bold;
-		margin: 0;	
-		margin-bottom: 2em;
+		margin: 0;
+		margin-bottom: .75rem;
 	}
 
 	.c-landing__splash-image {
@@ -120,14 +96,14 @@ html, body {
 	.c-landing__splash-text-inner {
 		flex: 1;
 		font-family: 'Montserrat';
-		font-size: 1.26em;
+		font-size: 1.76em;
 		font-weight: bold;
 		text-align: center;
 	}
 
 	.c-landing__splash-logo-inner {
 		display: block;
-		height: 6rem;
+		height: 8rem;
 		margin: 0 auto;
 		margin-bottom: 1rem;
 	}
@@ -163,37 +139,30 @@ html, body {
 		border: .14	em solid lightblue;
 	}
 
-	.c-landing__solutions {
-		margin: 6em 0;
-	}
-
 	.c-landing__solutions-cta {
-		margin-top: 6em;
+		margin-top: .25rem;
 		text-align: center
 	}
 
 	.c-landing__solutions-cta-description {
-		font-size: 1.26em;
-		margin-right: 1em;
+		display: block;
+		font-size: 1.15em;
 	}
-
 
 	.c-landing__grid {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0 -1em;
+		flex-direction: column;
 	}
 
 	.c-landing__grid-item {
-		padding: 1em;
-		width: calc(100% / 3);
+		margin-bottom: 1rem;
 	}
+
 
 	.c-landing__grid-item-title {
 		font-family: 'Montserrat';
-		font-size: 1.18em;
 		font-weight: bold;
-		margin-bottom: 1.15em;
 	}
 
 	.c-landing__grid-item-description {
@@ -202,52 +171,41 @@ html, body {
 	
 	.c-landing__organization {
 		color: white;
-		padding: 6em 0em;
 		position: relative;
 		overflow: hidden;
 		z-index: 1;
 	}
 
 	.c-landing__organization-bg {
-		display: flex;
+		display: flex;	
+		flex-direction: column;
 		position: absolute;
 		bottom: 0;
 		left: 0;
 		right: 0;
 		top: 0;
 		z-index: -1;
-		transform: rotateZ(20deg) scale(10) translateX(-.2%);
-		transform-style: preserve-3d;
 	}
 
 	.c-landing__organization-bg-left {
-		flex: 1;
-		width: 50%;
+		flex: 1 0 8%;
 	}
 
 	.c-landing__organization-bg-right {
 		flex: 1;
-		width: 50%;
-		margin-left: -.1em;
 	}
 
 	.c-landing__organization-content {
 		display: flex;
+		flex-direction: column;
 	}
 
 	.c-landing__organization-content-description {
-		font-size: 1.5em;
-		margin-bottom: 2em;
-	}
-
-	.c-landing__organization-button {
-		display: block;
-		margin: 0 auto;
+		font-size: 1em;
 	}
 
 	.c-landing__organization-content-inner {
 		flex: 1;
-		padding: 0 4em;
 	}
 
 	.c-landing__work {
@@ -334,6 +292,77 @@ html, body {
 			top: 55%;
 			text-align: left;
 			transform: translateY(-50%);
+		}
+
+		.c-landing__solutions {
+			margin: 6em 0;
+		}
+
+		.c-landing__section-title {
+			font-size: 2.46rem;
+			margin-bottom: 2em;
+		}
+
+		.c-landing__solutions-cta {
+			margin-top: 6em;
+		}
+	
+		.c-landing__solutions-cta-description {
+			display: inline;
+			font-size: 1.26em;
+			margin-right: 1em;
+		}
+
+		.c-landing__grid {
+			flex-direction: row;
+			margin: 0 -1em;
+		}
+	
+		.c-landing__grid-item {
+			padding: 1em;
+			width: calc(100% / 3);
+			margin: 0;
+		}
+
+		.c-landing__grid-item-title {
+			font-size: 1.18rem;
+		}
+
+		.c-landing__organization {
+			color: white;
+			padding: 6em 0em;
+			position: relative;
+			overflow: hidden;
+			z-index: 1;
+		}
+	
+		.c-landing__organization-bg {
+			flex-direction: row;
+			transform: rotateZ(20deg) scale(10) translateX(-.2%);
+			transform-style: preserve-3d;
+		}
+	
+		.c-landing__organization-bg-left {
+			flex: 1;
+			width: 50%;
+		}
+	
+		.c-landing__organization-bg-right {
+			width: 50%;
+			margin-left: -.1em;
+		}
+
+		.c-landing__organization-content {
+			flex-direction: row;
+		}
+	
+		.c-landing__organization-content-description {
+			font-size: 1.5em;
+			margin-bottom: 2em;
+		}
+	
+		.c-landing__organization-content-inner {
+			padding: 0 4em;
 		}
 	}
 }

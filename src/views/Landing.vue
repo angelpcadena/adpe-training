@@ -27,7 +27,7 @@
 			</div>
 		</v-flex>
 		<v-flex xs12>
-			<v-container>
+			<v-container class="pb-0">
 				<hr class="c-landing__splash-separator" />
 			</v-container>
 		</v-flex>
@@ -35,7 +35,7 @@
 			<v-container>
 				<div class="c-landing__grid">
 					<div class="c-landing__grid-item">
-						<h2 class="c-landing__section-title">Soluciones</h2>
+						<h2 class="c-landing__section-title ma-0">Soluciones</h2>
 					</div>
 					<div class="c-landing__grid-item">
 						<label class="c-landing__grid-item-title">e-Learning</label>
@@ -60,7 +60,7 @@
 				</div>
 				<div class="c-landing__solutions-cta">
 					<span class="c-landing__solutions-cta-description">
-						Call to Action pls click me
+						Platícanos sobre tus necesidades
 					</span>
 					<v-btn round @click="$root.goTo('#contactanos')" large depressed color="primary darken-2">	
 						Contáctanos
@@ -78,28 +78,34 @@
 			<v-container>
 				<h2 class="c-landing__section-title">AdPe en tu organización</h2>
 				<div class="c-landing__organization-content">
-					<div class="c-landing__organization-content-inner">
+					<div class="c-landing__organization-content-inner mb-5">
 						<div class="c-landing__organization-content-description">
 							Tu equipo
-							<ul>
-								<li> Una lista de lo que </li>
-								<li> Tu equipo podrá l	ograr </li>
-								<li> Con AdPe Solutions </li>
+							<ul class="ma-0">
+								<li>Una lista de lo que</li>
+								<li>Tu equipo podrá lograr</li>
+								<li>Con AdPe Solutions</li>
 							</ul>
 						</div>
+						<v-btn round large depressed color="amber darken-4 hidden-md-and-up mb-0">	
+							Botón 1
+						</v-btn>
 					</div>
 					<div class="c-landing__organization-content-inner">
 						<div class="c-landing__organization-content-description">
 							Tus clientes
-							<ul>
+							<ul class="ma-0">
 								<li> Una lista de lo que </li>
 								<li> Tus clienes podrán lograr </li>
 								<li> Con AdPe Solutions </li>
 							</ul>
 						</div>
+						<v-btn round large depressed color="amber darken-4 hidden-md-and-up">	
+							Botón 2
+						</v-btn>
 					</div>
 				</div>
-				<div class="c-landing__organization-content">
+				<div class="c-landing__organization-content hidden-sm-and-down">
 					<div class="c-landing__organization-content-inner">
 						<v-btn round large depressed color="amber darken-4">	
 							Botón 1
