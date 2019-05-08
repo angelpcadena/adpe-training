@@ -147,6 +147,7 @@ html, body {
 	.c-landing__solutions-cta-description {
 		display: block;
 		font-size: 1.15em;
+		margin-bottom: 1rem;
 	}
 
 	.c-landing__grid {
@@ -156,13 +157,18 @@ html, body {
 	}
 
 	.c-landing__grid-item {
-		margin-bottom: 1rem;
+		margin-bottom: 2.5rem;
+
+		&:first-child {
+			margin-bottom: 1.5rem;
+		}
 	}
 
 
 	.c-landing__grid-item-title {
 		font-family: 'Montserrat';
 		font-weight: bold;
+		margin-bottom: 1rem;
 	}
 
 	.c-landing__grid-item-description {
@@ -208,13 +214,10 @@ html, body {
 		flex: 1;
 	}
 
-	.c-landing__work {
-		padding: 6em 0;
-	}
-
 	.c-landing__work-showcase {
 		display: flex;
 		justify-content: space-between;
+		flex-direction: column;
 	}
 
 	.c-landing__work-showcase-item {
@@ -222,6 +225,11 @@ html, body {
 		padding: 2em;
 		border-radius: 2px;
 		text-align: center;
+		margin-bottom: 2em;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	.c-landing__showcase-item-image {
@@ -229,6 +237,7 @@ html, body {
 		display: block;
 		height: 200px;
 		width:  200px;
+		margin: 0 auto;
 	}
 
 	.c-landing__showcase-item-label {
@@ -258,7 +267,10 @@ html, body {
 	
 	.c-landing__contact {
 		background-color: $blue-light;
-		padding: 6em 0;
+	}
+
+	.c-landing__contact-content {
+		font-size: 16px;
 	}
 }
 
@@ -322,6 +334,10 @@ html, body {
 			padding: 1em;
 			width: calc(100% / 3);
 			margin: 0;
+
+			&:first-child {
+				margin: 0;
+			}
 		}
 
 		.c-landing__grid-item-title {
@@ -363,6 +379,22 @@ html, body {
 	
 		.c-landing__organization-content-inner {
 			padding: 0 4em;
+		}
+
+		.c-landing__work {
+			padding: 6em 0;
+		}
+
+		.c-landing__work-showcase {
+			flex-direction: row;
+		}
+
+		.c-landing__contact {
+			padding: 6em 0;
+		}
+
+		.c-landing__contact-content {
+			font-size: 24px;
 		}
 	}
 }

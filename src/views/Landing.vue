@@ -184,14 +184,16 @@
 			<v-flex id="contactanos" tag="section" class="c-landing__contact blue-grey lighten-1" xs12>
 				<v-container>
 					<v-layout row wrap>
-						<v-flex sm8 class="headline">
+						<v-flex sm8>
 							<h2 class="c-landing__section-title">Contáctanos</h2>
-							<p>
-								En AdPe Training Solutions nos interesa saber acerca de lo que necesitas para llevar a tu empresa al siguiente nivel.
-							</p>
-							<p>
-								No dudes en enviarnos cualquier duda o comentario sobre nuestro servicio, estamos a tu disposición.
-							</p>
+							<div class="c-landing__contact-content">
+								<p>
+									En AdPe Training Solutions nos interesa saber acerca de lo que necesitas para llevar a tu empresa al siguiente nivel.
+								</p>
+								<p>
+									No dudes en enviarnos cualquier duda o comentario sobre nuestro servicio, estamos a tu disposición.
+								</p>
+							</div>
 						</v-flex>
 						<v-flex sm4>
 							<contact-form></contact-form>
